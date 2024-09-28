@@ -15,18 +15,15 @@ monForm.addEventListener("submit",(e)=>{
         let titreCommentaire = document.createElement("h3");
         let newContent = document.createTextNode(prenom + " " + nom);
         titreCommentaire.appendChild(newContent);
-        espaceCommentaire.appendChild(titreCommentaire)
+        espaceCommentaire.appendChild(titreCommentaire);
     
 
-        let comment = document.createElement("p")
-        let commentText = document.createTextNode(commentaire)
-        comment.appendChild(commentText)
-        espaceCommentaire.appendChild(comment)
-
-
-
+        let comment = document.createElement("p");
+        let commentText = document.createTextNode(commentaire);
+        comment.appendChild(commentText);
+        espaceCommentaire.appendChild(comment);
     }
-
-
-
+    document.getElementById('nom').value = '';
+    document.getElementById('prenom').value = '';
+    document.getElementById('commentaire').value = '';
 });
